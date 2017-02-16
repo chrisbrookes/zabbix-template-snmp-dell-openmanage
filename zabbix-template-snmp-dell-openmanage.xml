@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-07-26T17:09:32Z</date>
+    <date>2017-02-16T00:23:35Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -2967,10 +2967,10 @@
                 </discovery_rule>
             </discovery_rules>
             <macros>
-             <macro>
-              <macro>{$SNMP_COMMUNITY}</macro>
-              <value>public</value>
-             </macro>
+                <macro>
+                    <macro>{$SNMP_COMMUNITY}</macro>
+                    <value>public</value>
+                </macro>
             </macros>
             <templates/>
             <screens/>
@@ -2987,8 +2987,8 @@
             <type>0</type>
             <dependencies>
                 <dependency>
-                    <name>Host is unavailable via ICMP ping</name>
-                    <expression>{Template ICMP Ping:icmpping[].max(#3)}=0</expression>
+                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                    <expression>{Template ICMP Ping:icmpping.max(#3)}=0</expression>
                 </dependency>
             </dependencies>
         </trigger>
