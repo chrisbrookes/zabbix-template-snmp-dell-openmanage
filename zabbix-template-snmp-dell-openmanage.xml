@@ -2987,7 +2987,7 @@
             <type>0</type>
             <dependencies>
                 <dependency>
-                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                    <name>Unavailable by ICMP ping</name>
                     <expression>{Template Module ICMP Ping:icmpping.max(#3)}=0</expression>
                 </dependency>
             </dependencies>
